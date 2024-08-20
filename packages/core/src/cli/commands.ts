@@ -67,7 +67,7 @@ export function runCli(): void {
         const rslibConfig = await loadConfig({
           path: options.config,
           envMode: options.envMode,
-        });
+        })
         const rsbuildInstance = await initRsbuild(rslibConfig);
         await rsbuildInstance.inspectConfig({
           mode: options.mode,
